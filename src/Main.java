@@ -2,30 +2,43 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println( " Упражнение 1,2");
+        System.out.println(" Упражнение 1");
+        int clientOS = 1;
 
-int clientDeviceYear = 2015;
-        int clientOS=1;
-        if (clientOS==0)
-        { System.out.println(" Установите версию приложения для iOS по ссылке." );
-if  (clientDeviceYear < 2015){
-    System.out.println( "Установите облегченную версию приложения для iOS по ссылке");
-}}
-            if (clientOS==1){
-                System.out.println( " Установите версию приложения для Android по ссылке.");
-                if  (clientDeviceYear < 2015){
-                    System.out.println( " Установите облегченную версию приложения для Android по ссылке.");
-                }
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+
+        System.out.println(" Упражнение 2");
+
+        int clientDeviceYear = 2015;
+
+        if (clientOS == 0) {
+            System.out.println(" Установите версию приложения для iOS по ссылке.");
+        } else if (clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
+        }
+        if (clientOS == 1) {
+            System.out.println(" Установите версию приложения для Android по ссылке.");
+        } else if (clientDeviceYear < 2015) {
+            System.out.println(" Установите облегченную версию приложения для Android по ссылке.");
+        }
+
+        System.out.println(" Упражнение 3");
+
+        int year = 2021;
+        if (year >= 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else if (year < 1584) {
+            System.out.println(year + " год находится на числовой оси до введения високосного года в 1584");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
 
 
-                }
-        System.out.println( " Упражнение 3");
-int year= 2021;
-if ( year<1584&& year%4==0 && year!=100 && year%400==0 ){
-    System.out.println( " Год является високосным");
-} else {
-    System.out.println( " Год не является високосным");
-}
+
         System.out.println( " Упражнение 4");
 
 int deliveryDistance=95;
@@ -37,9 +50,8 @@ if (deliveryDistance<20){
 
 } else if (deliveryDistance>=60 && deliveryDistance<100){
     System.out.println( " Доставка карты займет " +(day+2)+" суток");
-} else {
-    System.out.println(" Доставки нет");
-}
+}  else
+    System.out.println("Доставки нет");
 
         System.out.println( " Упражнение 4");
 int monthNumber = 12;
