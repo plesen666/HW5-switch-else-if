@@ -13,16 +13,15 @@ public class Main {
         System.out.println(" Упражнение 2");
 
         int clientDeviceYear = 2015;
+String msg = clientDeviceYear <=2015 ? " облеченную" : ""
+        ;if (clientOS == 0||clientOS ==1) {
+            String os = clientOS ==0 ? " iOS" : "Android";
 
-        if (clientOS == 0) {
-            System.out.println(" Установите версию приложения для iOS по ссылке.");
+            System.out.println(" Установите " + msg+ " версию приложения для" + os+ " iOS по ссылке.");
         } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
-        }
-        if (clientOS == 1) {
-            System.out.println(" Установите версию приложения для Android по ссылке.");
-        } else if (clientDeviceYear < 2015) {
-            System.out.println(" Установите облегченную версию приложения для Android по ссылке.");
+        } else  {
+            System.out.println(" Ошибка");
         }
 
         System.out.println(" Упражнение 3");
