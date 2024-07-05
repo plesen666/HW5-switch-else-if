@@ -11,11 +11,16 @@ public class Main {
 
         System.out.println(" Упражнение 2");
 
-        int clientDeviceYear = 2015;
+        int clientDeviceYear = 2024;
 
-        clientOS == 0 ? "iOS" : "Android";
-        clientDeviceYear < 2015 ? "облегчённую " : "";
-        System.out.println("Установите "+ clientDeviceYear + "версию приложения для " + clientOS + " по ссылке");
+        String version=clientDeviceYear  <= 2015 ? "облегчённую " : "" ;
+        String oS= clientOS == 0 ? "iOS" : "Android";
+
+        if (clientOS == 0) {
+            System.out.println("Установите " + version + "версию приложения для " + oS + " по ссылке");
+        } else {
+            System.out.println("error version");}
+
 
          System.out.println(" Упражнение 3");
 
