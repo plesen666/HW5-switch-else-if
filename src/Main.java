@@ -12,19 +12,47 @@ public class Main {
 
         System.out.println(" Упражнение 2");
 
-        int clientDeviceYear = 2015;
-String msg = clientDeviceYear <=2015 ? " облеченную" : ""
-        ;if (clientOS == 0||clientOS ==1) {
-            String os = clientOS ==0 ? " iOS" : "Android";
 
-            System.out.println(" Установите " + msg+ " версию приложения для" + os+ " iOS по ссылке.");
-        } else if (clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
-        } else  {
-            System.out.println(" Ошибка");
+
+        int clientDeviceYear = 2015;
+        int clientOS1 = 0; // или 1, если вы хотите изменить логику работы программы
+
+        if (clientOS1 == 0) {
+            if (clientDeviceYear > 2015)? System.out.println("Установите версию приложения для iOS по ссылке"):System.out.println("Установите облегчённую версию приложения для iOS по ссылке");
+            }
+        } else if (clientOS1 == 1) {
+            if (clientDeviceYear > 2015) ? System.out.println("Установите версию приложения для Android по ссылке"): System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            }
+        } else {
+            System.out.println("error version");
+        }
+                }}
+
+
+
+
+        int clientDeviceYear = 2015;
+        int clientOS1 ;
+
+        if (clientOS1 == 0) {
+
+            if (clientDeviceYear > 2015) ?System.out.println("Установите версию приложения для iOS по ссылке"):
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
 
+    } else if (clientOS1 == 1) {
+
+                if ( clientDeviceYear >2015)? System.out.println("Установите версию приложения для Android по ссылке"): System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                System.out.println("error version");
+            } }
+        }
+
+
         System.out.println(" Упражнение 3");
+
+
+
 
         int year = 2021;
         if (year >= 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
@@ -34,6 +62,7 @@ String msg = clientDeviceYear <=2015 ? " облеченную" : ""
         } else {
             System.out.println(year + " год не является високосным");
         }
+
 
 
 
