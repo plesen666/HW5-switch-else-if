@@ -14,9 +14,9 @@ public class Main {
         int clientDeviceYear = 2024;
 
         String version=clientDeviceYear  <= 2015 ? "облегчённую " : "" ;
-        String oS= clientOS == 0 ? "iOS" : "Android";
+        String oS= clientOS == 1? "iOS" : "Android";
 
-        if (clientOS == 0) {
+        if (clientOS == 0||clientOS ==1) {
             System.out.println("Установите " + version + "версию приложения для " + oS + " по ссылке");
         } else {
             System.out.println("error version");}
